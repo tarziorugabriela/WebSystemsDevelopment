@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
+    <title>Backpacker Web Assistant - User Guide</title>
+    <link href="css/scholarly.min.css" rel="stylesheet">
+    <script src="js/scholarly.min.js"></script>
+</head>
+<body prefix="schema: http://schema.org">
+<header>
+    <div class="banner">
+        <img alt="Scholarly HTML logo" height="50" src="scholarly-html.svg" width="227">
+        <div class="status"> Draft</div>
+    </div>
+    <h1>Baca User Guide</h1>
+</header>
+<div role="contentinfo">
+    <dl>
+        <dt>Authors</dt>
+        <dd>
+            <b>Stefan-Ionut Amihaesei,
+                Delia Ionita,
+                Stefanica Gabriela Tarzioru</b>
+        </dd>
+    </dl>
+</div>
+<section id="abstract" role="doc-abstract" typeof="sa:Abstract">
+    <h2>Overview</h2>
+	<h3>About Baca</h3>
+    <p style="text-align: justify;
+  text-justify: inter-word;">Software applications have a very important role in the travel industry today, research showing that in the last four years, travel software has been the fastest growing application category in terms of time spent using them, increasing it with 77%.The goal is to create an application that will cater to the needs of travelers through its specifically designed functionalities and it will help guide them throughout their journey, with an accent on web service oriented architecture. This article describes how our solution serves our goal, the interaction with the user, its design and sources of information.
+          The main language of the application is English but it can be translated in any language the user desire from the provided list of languages.</p>
+	<h3>User Guide Overview</h3>
+	<p style="text-align: justify;
+  text-justify: inter-word;">The website puts 8 pages available for the user: Your Baca, Flights & Hotels, Booking, Tour, Search Trip, Contact, Blog. We will talk about every page in the following sections.
+  This User Guide is created in order to familiarize its user with the provided functionalities of the web application:</p>
+	<ul>
+		<li>Authentification</li>
+		<li>Your Baca</li>
+		<li>Hotel & Flights</li>
+		<li>Booking</li>
+		<li>Tours</li>
+		<li>Search Trip</li>
+		<li>Our Blog</li>
+		<li>About</li>
+		<li>Contact</li>
+		<li>Widgets</li>
+	</ul>
+</section>
+<section id="authentication" role="doc-introduction">
+    <h2>Authentification</h2>
+    <p style="text-align: justify;
+  text-justify: inter-word;">The flows will start with the user logging in but these is not a prerequisite as the functionalities are still available but the preferences and setting will not be saved. For a user to log in into his account,
+  he has to access the "My account" section and log in with his credentials. If the user doesn't have any credential, he has to access the "Register" section and create the account.
+	</p>
+	<table>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="registration.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">The registration form requires a desired user name, e-mail address for the validation
+				of the user account and a password is necessary for login into the application.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="login.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">The login form requires the name and password of a registered user.</p>
+			</td>
+		</tr>
+	</table>
+	<p style="text-align: justify; text-justify: inter-word;">Once the user has registered and logged in with the correct credentials, he can reset his password, log out or edit his profile details:</p>
+	<img style="align:center; width:800px; height:auto;" alt="Register Screen" src="loggedUSer.png">
+</section>
+<section id="yourBaca">
+    <h2>Your Baca</h2>
+    <p> his is the main page of the web application wich will display a map with the current location of the user
+		togheter with an TravelMap where the user can plan his next travel having a route established in this map.</p>
+	<img style="align:center; width:800px; height:auto;" alt="Register Screen" src="filterSelected.png">
+	<p>
+		The user can search for location on the map, he can change the map view, he can select starting point and end point for his trip and by saving them, a proposed route shall be displayed to the user.
+	</p>
+	<img style="align:center; width:800px; height:auto;" alt="" src="searchedfinished.png">
+	<p>
+		If the user scrolls down, he can access the functionalities of the Nearby Places map where he can find any kind of location that he wishes to go to just by selecting it from the filter screen from the left side of the screen. By selecting one or more filters, the map will automatically display the nearest location of the desired type.
+	</p>
+	<img style="align:center; width:800px; height:auto;" alt="" src="locationRequired.png">
+</section>
+<section id="hotel-flights" role="doc-introduction">
+    <h2>Hotel- Flights</h2>
+    <p style="text-align: justify;
+  text-justify: inter-word;">The user can change the displayed functionalities of the application just by accessing from the top menu, under "Your Baca" section, any of the desired option. 
+	</p>
+	<table>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="topmenu.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;"> For example, if he is looking for flights and hotels, he can access the option with the same name:</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="flightmap.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">On this page the user can access a map with different destination and find flights to the selected destination just by clicking on them.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="tableflights.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">Also, he can check for flights and their prices for certain months and with the help of a currency calculator, he can check the prices in his local currency.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="bestdeal.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">There will also be a section with the current best deals for certain routes of flights that can be of the user interest.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="hotel.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">Depending on his current location, the user will see the most recommended hotel where he can stay.</p>
+			</td>
+		</tr>
+	</table>
+	<p style="text-align: justify; text-justify: inter-word;">All of the previously presented functionalities will redirect the user to the most recommended websites where he can book a flight or a hotel.</p>
+	<img style="align:center; width:800px; height:auto;" alt="Register Screen" src="booking.png">
+</section>
+<section id="booking">
+    <h2>Booking</h2>
+    <p>If the user selects the "Booking" option from the top menu, he will see a page with a map with all of the posibilities of places where he can book a stay and he can modify the filters so that the map can display to him only relevant locations.</p>
+	<img style="align:center; width:800px; height:auto;" alt="Noti Storyboard" src="staymap.png">
+	
+</section>
+<section id="tours" role="doc-introduction">
+    <h2>Tours</h2>
+    <p style="text-align: justify;
+  text-justify: inter-word;">On this page, the user can check for available tours for him with a recommended location and also can check how much a transport will cost for him by inputing the destination and his pick-up point. 
+	</p>
+	<table>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="tour.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;"> For example, the current location for a tour is Moscow and the user has the possibility to check for available tour to the displayed location just by clicking on them.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="taxi.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">On this functionality the user can insert a pick up point and a destination and check an estimated price of a taxi ride, for example, which depends of the travel time selected..</p>
+			</td>
+		</tr>
+	</table>
+</section>
+<section id="trip" role="doc-introduction">
+    <h2>Search Trip</h2>
+    <p style="text-align: justify;
+  text-justify: inter-word;">By selecting the search trip option from the top menu, the user will be redirected to a form where he ca input his requirements for a desired trip and the application will show him recomendations. 
+	</p>
+	<table>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="searchtrip.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;"> The user can select filters like : desired destinations, date, a max price, duration of the trip, the difficulty of the trip and also what is the minimum age of the travelers. Depending of all the requirements, trips will be displayed.</p>
+			</td>
+		</tr>
+	</table>
+</section>
+
+<section id="blog">
+    <h2>Our Blog</h2>
+    <p>On the top menu, the user can also go the blog section of the website just by selecting the button with the relevant name. On the displayed page the user will see all of our posts. Any news or any changes should be found on this page so that the user can be updated continuously. </p>
+	<img style="align:center; width:800px; height:auto;" alt="" src="blog.png">
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>In the About page, users can find informations about our team and about our application. </p>
+	<img style="align:center; width:800px; height:auto;" alt="" src="about.png">
+</section> 
+<section id="contact">
+    <h2>Contact</h2>
+    <p>In this page, the user can complete a form and submit it in order to reach to us regarding anything that affects the user experience, any problems, any required help or even any review or feedback about the web application. The user has to complete first and last name, his email address so that we can reply, and the message to be sent to us </p>
+	<img style="align:center; width:800px; height:auto;" alt="" src="contact.png">
+</section> 
+<section id="widgets" role="doc-introduction">
+    <h2>Widgets</h2>
+    <p style="text-align: justify;
+  text-justify: inter-word;">In the footer of the pages, the user can find different useful widgets which can be helpful for organising his trips.
+	</p>
+	<table>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="" src="weather.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">The weather widget will display the current temperature in the current location of the user.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="firerisk.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">This widget will display the firerisk depending on the current location of the user so that he can be aware how dangerous is it for him to go into a forest or any kind of trip that can present risk posibilities</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="humidity.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">The humidity widget will display information about the air humidity, coordinates of the current location, air pressure and rain possibilites for the user that are interested in these information.</p>
+			</td>
+		</tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Register Screen" src="reviews.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">The reviews widget will display reviews of the current location or the nearest location of the user that which be helpful.</p>
+			</td>
+		</tr>
+	</table>
+</section>
+<section id="uservideo">
+    <h2>User Guide Video</h2>
+    <p>In the following video you can see how an user can use the website : </p>
+	<iframe width="860" height="615" src="https://www.youtube.com/embed/XquQoPht7Qg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section id="knownissues">
+    <h2>Known Issues</h2>
+    <p>Currently, there are more than one functionality which is not working as expected. The known issues of the current version are:</p>
+	<ul>
+		<li>The register page is displaying even after log in.</li>
+		<li>Nearby places map is not displayed until you select an option from the filters.</li>
+		<li>Search trip formular is not working at this moment.</li>
+		<li>Recomended hotel which should have been displayed on the page "Hotel & Flights" may not appear all the time.</li>
+		<li>The estimation functionality for the quote of a taxi transportation cost may not work all the time.</li>
+	</ul>
+	<br><br>
+</section>
+<h2>References</h2>
+        <section id="Sources">
+        <h2>Sources</h2>
+            <ol>
+                <li><a href="https://www.lonelyplanet.com/articles/travel-app-growth">Travel App Growth</a> </li>
+                <li><a href="https://travelmap.net">Travelmap.net</a></li>
+                <li><a href="https://ro.wordpress.org/plugins/gps-plotter/">GPS Plotter</a></li>
+                <li><a href=" https://openweathermap.org">Open Weather API</a> </li>
+                <li><a href="https://ro.wordpress.org/plugins/location-weather/">Location Weather</a> </li>
+                <li><a href="http://www.travelpayouts.com">Travel Payouts</a></li>
+                <li><a href="https://www.lyfemarketing.com/blog/effective-website-design/">Effective Web Design</a></li>
+                <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/websys/">Web System Development</a></li>
+            </ol>
+
+        </section>
+</body>
+</html>
